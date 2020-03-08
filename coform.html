@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .container {
+      width: 345px;
+      border: 1px solid;
+      margin: auto;
+      padding: 10px;
+      background-color: darkcyan;
+      color: white;
+    }
+
+    h1 {
+      margin: auto;
+      text-align: center;
+      font-weight: bold;
+      color: yellow;
+      margin: 5px;
+      font-size: 30px;
+    }
+
+    div {
+      font-size: 14px;
+    }
+
+    .row {
+      width: 340px;
+      /* border: 1px solid white; */
+    }
+
+    .form-control {
+      margin-left: 12px;
+      width: 330px;
+      height: 28px;
+      border-radius: 5px;
+      border-bottom: 2px solid black;
+      border: none;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 2px;
+      box-shadow: black 2px 2px;
+    }
+
+    #btn {
+      margin: auto;
+      background-color: tomato;
+      width: 130px;
+      height: 40px;
+      box-shadow: black 2px 2px;
+      margin-left: 35%;
+      margin-top: 5px;
+    }
+
+    #btn :hover {
+      background-color: darkorange;
+      color: black;
+    }
+
+    h6 {
+      justify-content: center;
+      margin-left: 2px;
+    }
+
+    div.ui-datepicker {
+      width: 320px;
+      height: 320px;
+      padding: 2px;
+      font-size: 25px;
+      color: black;
+      background-color: white;
+      margin: 2px;
+      justify-content: center;
+      border: 1px solid black;
+      border-radius: 2px;
+      letter-spacing:3px ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form id="test-form" method="GET"
+      action="https://script.google.com/macros/s/AKfycbyZ5Rt5sWH10N_RldhpLEIkZ0kMHLVXfTDNeEW8AyvMxk1vC-Q/exec">
+      <h1><i class="far fa-share-square" style="margin-right: 10px"></i>CẬP NHẬT QCO</h1>
+      <!-- Line -->
+      <div>Chuyền</div>
+      <div class="row">
+        <input type="text" class="form-control" name="Line" id="" aria-describedby="helpId"
+          placeholder="Nhập số chuyền">
+      </div>
+      <!-- Style -->
+      <div>Mã hàng/Style</div>
+      <div class="row">
+        <input type="text" class="form-control" name="Style" id="" placeholder="Nhập mã hàng">
+      </div>
+      <!-- Type -->
+      <div>Loại/Type</div>
+      <div class="row">
+
+        <select class="form-control" name="Type" id="">
+          <option value="">Chọn loại hàng</option>
+          <option value="Quần dài">Quần dài</option>
+          <option value="Quần ngắn">Quần ngắn</option>
+          <option value="Áo Jacket">Áo Jacket</option>
+          <option value="Áo T-shirt">Áo T-shirt</option>
+          <option value="Áo sư mi">Áo sơ mi</option>
+        </select>
+      </div>
+      <!-- Buyer -->
+      <div>Khách hàng/Buyer</div>
+      <div class="row">
+        <select class="form-control" name="Buyer" id="">
+          <option value="">Chọn khách hàng</option>
+          <option value="REI">REI</option>
+          <option value="ASICS">ASICS</option>
+          <option value="UNDER ARMOUR">UNDER ARMOUR</option>
+          <option value="NIKE">NIKE</option>
+          <option value="SPORTFIELD">SPORTFIELD</option>
+          <option value="ADIDAS">ADIDAS</option>
+        </select>
+      </div>
+      <!-- QCO meeting date -->
+      <div>Ngày họp QCO/QCO meeting date</div>
+      <div class="row">
+        <input type="text" class="form-control" name="QCO_meeting_date" id="datepicker1" aria-describedby="helpId"
+          placeholder="Chọn ngày">
+      </div>
+      <!-- CO date -->
+      <div>Ngày lên chuyền/CO date</div>
+      <div class="row">
+        <input type="text" class="form-control" name="CO_date" id="datepicker2" aria-describedby="helpId"
+          placeholder="Chọn ngày">
+      </div>
+      <!-- PLAN date -->
+      <div>Kế hoạch/Plan CO</div>
+      <div class="row">
+        <input type="text" class="form-control" name="Plan_change_date" id="datepicker3" aria-describedby="helpId"
+          placeholder="Chọn ngày">
+      </div>
+      <!-- N0_day_prepare -->
+      <div>Số ngày còn lại để chuẩn bị máy/No# day preparation</div>
+      <div class="row">
+        <select class="form-control" name="No_day_preparation" id="">
+          <option value="">Chọn số ngày</option>
+          <option value="1">Trước 1 ngày</option>
+          <option value="2">Trước 2 ngày</option>
+          <option value="3">Trước 3 ngày</option>
+          <option value="4">Trước 4 ngày</option>
+          <option value="5">Trước 5 ngày</option>
+          <option value="6">Trước 6 ngày</option>
+          <option value="7">Trước 7 ngày</option>
+        </select>
+      </div>
+      <!-- SPECIAL-->
+      <div>Yêu cầu đặc biệt/Special Requirement</div>
+      <div class="row">
+        <textarea class="form-control" name="Spec_req" id="" rows="3" placeholder="Nhập yêu cầu"></textarea>
+      </div>
+      <!-- REMARK -->
+      <div>Ghi chú/Ghi chú</div>
+      <div class="row">
+        <div class="form-group">
+          <textarea class="form-control" name="Remark" id="" rows="3" placeholder="Nhập ghi chú"></textarea>
+        </div>
+        <!-- Button -->
+        <div class="row">
+          <button type="submit" id="btn"><i class="fas fa-cloud-upload-alt"
+              style="font-size:15px ;margin-right: 7px;"></i> Cập Nhật</button>
+        </div>
+    </form>
+    <div>
+      <h6><i class="fas fa-user-tie"
+          style="margin-left: 7px; margin-right: 7px; color:white;font-size: 13px;"></i>IE.Khapham <i
+          class="fas fa-phone" style="margin-left: 6px; margin-right: 7px; color:white;font-size: 13px;"></i> 0355210716
+        <i class="far fa-envelope"
+          style="margin-left: 7px;margin-right: 6px; color:white; font-size: 13px;"></i>pmkha92@gmail.com</h6>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $("#datepicker1").datepicker();
+      $("#datepicker2").datepicker();
+      $("#datepicker3").datepicker();
+    });
+  </script>
+</body>
+
+</html>
