@@ -19,7 +19,6 @@
       margin: 0px;
       padding: 0px;
     }
-
     .container {
       width: 345px;
       border: 1px solid;
@@ -28,70 +27,78 @@
       background-color: darkcyan;
       color: white;
     }
-
     h1 {
       margin: auto;
       text-align: center;
       font-weight: bold;
       color: yellow;
-      margin: 5px;
-      font-size: 30px;
+      margin: 2px;
+      font-size: 25px;
     }
-
     div {
       font-size: 14px;
     }
-
     .row {
       width: 340px;
       /* border: 1px solid white; */
     }
-
     .form-control {
       margin-left: 12px;
       width: 330px;
-      height: 28px;
+      height: 20px;
       border-radius: 5px;
       border-bottom: 2px solid black;
       border: none;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
       padding: 2px;
       box-shadow: black 2px 2px;
+      font-size: 11px;
     }
-
     #btn {
       margin: auto;
       background-color: tomato;
-      width: 130px;
-      height: 40px;
+      width: 110px;
+      height: 35px;
       box-shadow: black 2px 2px;
-      margin-left: 35%;
-      margin-top: 5px;
+      margin-left: 40%;
+      margin-top: 0px;
     }
-
     #btn :hover {
       background-color: darkorange;
       color: black;
     }
-
     h6 {
       justify-content: center;
       margin-left: 2px;
     }
-
     div.ui-datepicker {
-      width: 320px;
-      height: 320px;
-      padding: 2px;
-      font-size: 25px;
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      font-size: 20px;
       color: black;
       background-color: white;
       margin: 2px;
       justify-content: center;
       border: 1px solid black;
       border-radius: 2px;
-      letter-spacing:3px ;
+      letter-spacing:0px ;
+    }
+    iframe{
+      width: 100%;
+      height:100% ;
+      margin: 5px 5px;
+      padding: 0px;
+    }
+    a{
+      text-align: center;
+      color: yellow;
+      margin-left:110px;
+      text-decoration: underline;
+      margin: 0px center;
+      
+      
     }
   </style>
 </head>
@@ -151,13 +158,13 @@
           placeholder="Chọn ngày">
       </div>
       <!-- PLAN date -->
-      <div>Kế hoạch/Plan CO</div>
+      <!-- <div>Kế hoạch/Plan CO</div>
       <div class="row">
         <input type="text" class="form-control" name="Plan_change_date" id="datepicker3" aria-describedby="helpId"
           placeholder="Chọn ngày">
-      </div>
+      </div> -->
       <!-- N0_day_prepare -->
-      <div>Số ngày còn lại để chuẩn bị máy/No# day preparation</div>
+      <div>Số ngày chuẩn bị máy/No# day preparation</div>
       <div class="row">
         <select class="form-control" name="No_day_preparation" id="">
           <option value="">Chọn số ngày</option>
@@ -184,8 +191,18 @@
         <!-- Button -->
         <div class="row">
           <button type="submit" id="btn"><i class="fas fa-cloud-upload-alt"
-              style="font-size:15px ;margin-right: 7px;"></i> Cập Nhật</button>
+              style="font-size:15px ;"></i> Cập Nhật</button>
         </div>
+        <!-- //Nhung -->
+        <div>          
+          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7NlXYM3z5Ztul-8vsXIZh8SZ4cLRNYvOh63Pi-6kZBjZDuV7XvwVnC-ZXhfE7Izu4t-_2b9TrKXCA/pubhtml?widget=true&amp;headers=true"></iframe>
+          
+        </div>
+        <div>
+          <a href="https://docs.google.com/spreadsheets/d/16IGKkYIUuoTp1dWRHC_7m3vw48FM0sd92lTv2lYb9IQ/edit?usp=sharing"><i class="far fa-hand-point-down" style="margin-right:5px; font-size:18px;"></i>Xem nguồn trang</a>
+        </div>
+        
+
     </form>
     <div>
       <h6><i class="fas fa-user-tie"
@@ -193,7 +210,7 @@
           class="fas fa-phone" style="margin-left: 6px; margin-right: 7px; color:white;font-size: 13px;"></i> 0355210716
         <i class="far fa-envelope"
           style="margin-left: 7px;margin-right: 6px; color:white; font-size: 13px;"></i>pmkha92@gmail.com</h6>
-    </div>
+    </div>    
   </div>
 
   <script>
