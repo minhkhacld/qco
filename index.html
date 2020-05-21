@@ -26,7 +26,7 @@
       margin: auto;
       padding: 10px;
       background-color: darkcyan;
-      color: white;    
+      color: white;
     }
 
     h1 {
@@ -148,21 +148,25 @@
       /* width: 100%; */
       padding: 0px;
     }
+
     @media only screen and (max-width: 400px) {
-    .container {
-        width: 100% !important;        
+      .container {
+        width: 100% !important;
         margin: 3px !important;
-    }        
-    h1{
+      }
+
+      h1 {
         width: 100% !important;
-    }
-    iframe{
+      }
+
+      iframe {
         width: 100% !important;
+      }
+
+      .container-fluid {
+        width: 100% !important;
+      }
     }
-    .container-fluid{
-        width: 100% !important;             
-    }
-}
   </style>
 </head>
 
@@ -242,6 +246,7 @@
         <div class="row">
           <select class="form-control" name="No_day_preparation" id="" required>
             <option value="">Chọn số ngày</option>
+            <option value="Trong ngày">Trong ngày</option>
             <option value="1">Trước 1 ngày</option>
             <option value="2">Trước 2 ngày</option>
             <option value="3">Trước 3 ngày</option>
@@ -257,7 +262,7 @@
           <textarea class="form-control" name="Spec_req" id="" rows="3" placeholder="Nhập yêu cầu"></textarea>
         </div>
         <!-- REMARK -->
-        <div>Ghi chú/Ghi chú</div>
+        <div>Ghi chú/Remark</div>
         <div class="row">
           <div class="form-group">
             <textarea class="form-control" name="Remark" id="" rows="3" placeholder="Nhập ghi chú"></textarea>
@@ -267,16 +272,11 @@
             <button type="submit" id="btn"><i class="fas fa-cloud-upload-alt" style="font-size:15px ;"></i> Cập
               Nhật</button>
           </div>
-          <!-- //Nhung -->
-          <div>
-            <iframe
-              src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ7NlXYM3z5Ztul-8vsXIZh8SZ4cLRNYvOh63Pi-6kZBjZDuV7XvwVnC-ZXhfE7Izu4t-_2b9TrKXCA/pubhtml?widget=true&amp;headers=true"></iframe>
-
-          </div>
           <div>
             <a
               href="https://docs.google.com/spreadsheets/d/16IGKkYIUuoTp1dWRHC_7m3vw48FM0sd92lTv2lYb9IQ/edit?usp=sharing"><i
-                class="far fa-hand-point-down" style="margin-right:5px; font-size:18px;"></i>Xem nguồn trang</a>
+                class="far fa-hand-point-down" style="margin-top: 13px;margin-right:5px; font-size:18px;"></i>Xem nguồn
+              trang</a>
           </div>
       </form>
       <div>
