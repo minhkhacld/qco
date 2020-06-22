@@ -1,329 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <style>
-    body {
-      margin: 0px;
-      padding: 0px;
-    }
+    <title>QCO MEETING</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    .container {
-      width: 345px;
-      border: 1px solid;
-      margin: auto;
-      padding: 10px;
-      background-color: darkcyan;
-      color: white;
-    }
-
-    h1 {
-      margin: auto;
-      text-align: center;
-      font-weight: bold;
-      color: yellow;
-      margin: 2px;
-      font-size: 25px;
-    }
-
-    div {
-      font-size: 14px;
-    }
-
-    .row {
-      width: 340px;
-      /* border: 1px solid white; */
-    }
-
-    .form-control {
-      margin-left: 12px;
-      width: 330px;      
-      height: 25px;
-      border-radius: 5px;
-      border-bottom: 2px solid black;
-      border: none;
-      margin-top: 2px;
-      margin-bottom: 2px;
-      padding: 2px;
-      box-shadow: black 2px 2px;
-      font-size: 11px;
-    }
-
-    #btn {
-      margin: auto;
-      background-color: tomato;
-      width: 110px;
-      height: 35px;
-      box-shadow: black 2px 2px;
-      margin-left: 40%;
-      margin-top: 0px;
-      border-radius: 10px;
-    }
-
-    #btn :hover {
-      background-color: darkorange;
-      color: black;
-    }
-
-    h6 {
-      justify-content: center;
-      margin-left: 2px;
-    }
-
-    /* div.ui-datepicker {
-      width: 330px;
-      height: 330px;
-      padding: 0px;
-      font-size: 20px;
-      color: black;
-      background-color: white;
-      margin: 2px;
-      justify-content: center;
-      border: 1px solid black;
-      border-radius: 2px;
-      letter-spacing: 1px;
-    } */
-
-    iframe {
-      width: 100%;
-      height: 300px;
-      margin: 5px 5px;
-      padding: 0px;
-    }
-
-    a {
-      text-align: center;
-      color: yellow;
-      margin-left: 110px;
-      text-decoration: underline;
-      margin: 0px center;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-      font-size: 13px !important;
-    }
-
-    li {
-      float: left !important;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 10px 12px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #111;
-    }
-
-    .active {
-      background-color: #4CAF50;
-    }
-
-    .container-fluid {
-      /* position: -webkit-sticky; */
-      position: sticky !important;
-      top: 0;
-      margin: 0px auto !important;
-      /* width: 100%; */
-      padding: 0px;
-    }
-
-    @media only screen and (max-width: 400px) {
-      .container {
-        width: 100% !important;
-        margin: 3px !important;
-      }
-
-      h1 {
-        width: 100% !important;
-      }
-
-      iframe {
-        width: 100% !important;
-      }
-
-      .container-fluid {
-        width: 100% !important;
-      }
-    }
-  </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./picture/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- Nar barr -->
-    <!-- <div class="row" class="nar-bar">
-      <ul class="limenu">
-        <li><a class="active" href="http://minhkhacld.github.io/qco">Home</a></li>
-        <li><a href="http://minhkhacld.github.io/downtime">Downtime</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div> -->
     <div class="container">
+        <div class="row" id="header">
+            <div class="col-1">
+                <img src="./picture/PG logo.png" id="img" alt="PG logo">
+            </div>
+            <div class="col-11">
+                <h1>CẬP NHẬT QCO</h1>
+            </div>
+        </div>
+        <!-- <h1>CẬP NHẬT QCO</h1> -->
+        <form action="https://script.google.com/macros/s/AKfycbyZ5Rt5sWH10N_RldhpLEIkZ0kMHLVXfTDNeEW8AyvMxk1vC-Q/exec"
+            method="get">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="">Chuyền/Line</label>
+                        <input type="text" class="form-control" name="Line" id="" aria-describedby="helpId"
+                            placeholder="Nhập số chuyền">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="">Mã hàng/Style</label>
+                        <input type="text" class="form-control" name="Style" id="" aria-describedby="helpId"
+                            placeholder="Nhập mã hàng">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="">Loại Hàng/Type</label>
+                        <select class="form-control" name="Type" id="" required>
+                            <option value="">Chọn loại hàng</option>
+                            <option value="Quần dài">Quần dài</option>
+                            <option value="Quần ngắn">Quần ngắn</option>
+                            <option value="Áo Jacket">Áo Jacket</option>
+                            <option value="Áo T-shirt">Áo T-shirt</option>
+                            <option value="Áo sư mi">Áo sơ mi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Khách hàng/Buyer</label>
+                        <select class="form-control" name="Buyer" id="" required>
+                            <option value="">Chọn khách hàng</option>
+                            <option value="REI">REI</option>
+                            <option value="ASICS">ASICS</option>
+                            <option value="UNDER ARMOUR">UNDER ARMOUR</option>
+                            <option value="NIKE">NIKE</option>
+                            <option value="SPORTFIELD">SPORTFIELD</option>
+                            <option value="ADIDAS">ADIDAS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Ngày họp QCO/QCO meeting date</label>
+                        <input type="date" class="form-control" name="QCO_meeting_date" id="" aria-describedby="helpId"
+                            placeholder="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Ngày lên chuyền/CO date</label>
+                        <input type="date" class="form-control" name="CO_date" id="" aria-describedby="helpId"
+                            placeholder="">
+                    </div>
+                </div>
+            </div>
 
-      <form id="test-form" method="GET"
-        action="https://script.google.com/macros/s/AKfycbyZ5Rt5sWH10N_RldhpLEIkZ0kMHLVXfTDNeEW8AyvMxk1vC-Q/exec">
-        <h1><i class="far fa-share-square" style="margin-right: 10px"></i>CẬP NHẬT QCO</h1>
-        <!-- Line -->
-        <div>Chuyền</div>
-        <div class="row">
-          <input type="text" class="form-control" name="Line" id="" aria-describedby="helpId"
-            placeholder="Nhập số chuyền" required>
-        </div>
-        <!-- Style -->
-        <div>Mã hàng/Style</div>
-        <div class="row">
-          <input type="text" class="form-control" name="Style" id="" placeholder="Nhập mã hàng" required>
-        </div>
-        <!-- Type -->
-        <div>Loại/Type</div>
-        <div class="row">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Số ngày chuẩn bị máy/No# day preparation</label>
+                        <select class="form-control" name="No_day_preparation" id="" required>
+                            <option value="">Chọn số ngày</option>
+                            <option value="Trong ngày">Trong ngày</option>
+                            <option value="1">Trước 1 ngày</option>
+                            <option value="2">Trước 2 ngày</option>
+                            <option value="3">Trước 3 ngày</option>
+                            <option value="4">Trước 4 ngày</option>
+                            <option value="5">Trước 5 ngày</option>
+                            <option value="6">Trước 6 ngày</option>
+                            <option value="7">Trước 7 ngày</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-          <select class="form-control" name="Type" id="" required>
-            <option value="">Chọn loại hàng</option>
-            <option value="Quần dài">Quần dài</option>
-            <option value="Quần ngắn">Quần ngắn</option>
-            <option value="Áo Jacket">Áo Jacket</option>
-            <option value="Áo T-shirt">Áo T-shirt</option>
-            <option value="Áo sư mi">Áo sơ mi</option>
-          </select>
-        </div>
-        <!-- Buyer -->
-        <div>Khách hàng/Buyer</div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Yêu cầu đặc biệt/Special Requirement</label>
+                        <textarea class="form-control" name="Spec_req" id="" rows="3"
+                            placeholder="Nhập yêu cầu"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Ghi chú/Remark</label>
+                        <textarea class="form-control" name="Remark" id="" rows="3"
+                            placeholder="Nhập ghi chú"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <button type="submit" id="btn"><i class="fas fa-cloud-upload-alt" style="font-size:15px ;"></i>
+                            Cập
+                            Nhật</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <a
+                            href="https://docs.google.com/spreadsheets/d/16IGKkYIUuoTp1dWRHC_7m3vw48FM0sd92lTv2lYb9IQ/edit?usp=sharing"><i
+                                class="far fa-hand-point-down"
+                                style="margin-top: 13px;margin-right:5px; font-size:18px;"></i>Xem nguồn
+                            trang</a>
+                    </div>
+                </div>
+            </div>
+        </form>
         <div class="row">
-          <select class="form-control" name="Buyer" id="" required>
-            <option value="">Chọn khách hàng</option>
-            <option value="REI">REI</option>
-            <option value="ASICS">ASICS</option>
-            <option value="UNDER ARMOUR">UNDER ARMOUR</option>
-            <option value="NIKE">NIKE</option>
-            <option value="SPORTFIELD">SPORTFIELD</option>
-            <option value="ADIDAS">ADIDAS</option>
-          </select>
+            <div class="col-sm-12">
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/kha-ph%E1%BA%A1m-minh-58aa68153/"><i
+                            class="fab fa-linkedin-in"></i></a><a class="social-icon"
+                        href="https://www.instagram.com/minhkhacld/"><i class="fab fa-instagram"></i></a><a
+                        class="social-icon" href="https://www.facebook.com/phamminh.kha"><i
+                            class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
         </div>
-        <!-- QCO meeting date -->
-        <div>Ngày họp QCO/QCO meeting date</div>
-        <div class="row">
-          <input type="text" class="form-control" name="QCO_meeting_date" id="datepicker1" aria-describedby="helpId"
-            placeholder="Chọn ngày" required>
-        </div>
-        <!-- CO date -->
-        <div>Ngày lên chuyền/CO date</div>
-        <div class="row">
-          <input type="text" class="form-control" name="CO_date" id="datepicker2" aria-describedby="helpId"
-            placeholder="Chọn ngày" required>
-        </div>
-        <!-- PLAN date -->
-        <!-- <div>Kế hoạch/Plan CO</div>
-      <div class="row">
-        <input type="text" class="form-control" name="Plan_change_date" id="datepicker3" aria-describedby="helpId"
-          placeholder="Chọn ngày">
-      </div> -->
-        <!-- N0_day_prepare -->
-        <div>Số ngày chuẩn bị máy/No# day preparation</div>
-        <div class="row">
-          <select class="form-control" name="No_day_preparation" id="" required>
-            <option value="">Chọn số ngày</option>
-            <option value="Trong ngày">Trong ngày</option>
-            <option value="1">Trước 1 ngày</option>
-            <option value="2">Trước 2 ngày</option>
-            <option value="3">Trước 3 ngày</option>
-            <option value="4">Trước 4 ngày</option>
-            <option value="5">Trước 5 ngày</option>
-            <option value="6">Trước 6 ngày</option>
-            <option value="7">Trước 7 ngày</option>
-          </select>
-        </div>
-        <!-- SPECIAL-->
-        <div>Yêu cầu đặc biệt/Special Requirement</div>
-        <div class="row">
-          <textarea class="form-control" name="Spec_req" id="" rows="3" placeholder="Nhập yêu cầu"></textarea>
-        </div>
-        <!-- REMARK -->
-        <div>Ghi chú/Remark</div>
-        <div class="row">
-          <div class="form-group">
-            <textarea class="form-control" name="Remark" id="" rows="3" placeholder="Nhập ghi chú"></textarea>
-          </div>
-          <!-- Button -->
-          <div class="row">
-            <button type="submit" id="btn"><i class="fas fa-cloud-upload-alt" style="font-size:15px ;"></i> Cập
-              Nhật</button>
-          </div>
-          <div>
-            <a
-              href="https://docs.google.com/spreadsheets/d/16IGKkYIUuoTp1dWRHC_7m3vw48FM0sd92lTv2lYb9IQ/edit?usp=sharing"><i
-                class="far fa-hand-point-down" style="margin-top: 13px;margin-right:5px; font-size:18px;"></i>Xem nguồn
-              trang</a>
-          </div>
-      </form>
-      <div>
-        <h6><i class="fas fa-user-tie"
-            style="margin-left: 7px; margin-right: 7px; color:white;font-size: 13px;"></i>IE.Khapham <i
-            class="fas fa-phone" style="margin-left: 6px; margin-right: 7px; color:white;font-size: 13px;"></i>
-          0355210716
-          <i class="far fa-envelope"
-            style="margin-left: 7px;margin-right: 6px; color:white; font-size: 13px;"></i>pmkha92@gmail.com</h6>
-      </div>
     </div>
-    <!-- <script>
-    $(function () {
-      $("#datepicker1").datepicker();
-      $("#datepicker2").datepicker();
-      $("#datepicker3").datepicker();
-    });
-  </script> -->
-    <script>
-      $(function () {
-        $('input[name="QCO_meeting_date"]').daterangepicker({
-          singleDatePicker: true,
-          showDropdowns: true,
-          minYear: 1901,
-          maxYear: parseInt(moment().format('YYYY'), 10)
-        }, function (start, end, label) {
-          var years = moment().diff(start, 'years');
-          // alert("You are " + years + " years old!");
-        });
-      });
-      $(function () {
-        $('input[name="CO_date"]').daterangepicker({
-          singleDatePicker: true,
-          showDropdowns: true,
-          minYear: 1901,
-          maxYear: parseInt(moment().format('YYYY'), 10)
-        }, function (start, end, label) {
-          var years = moment().diff(start, 'years');
-          // alert("You are " + years + " years old!");
-        });
-      });
-    </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
